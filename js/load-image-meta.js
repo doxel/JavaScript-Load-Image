@@ -109,7 +109,7 @@
                 markerLength = dataView.getUint16(offset + 2) + 2
                 if (offset + markerLength > dataView.byteLength) {
                   console.log('Invalid meta data: Invalid segment size.')
-                  break
+                  //break
                 }
                 parsers = loadImage.metaDataParsers.jpeg[markerBytes]
                 if (parsers) {
